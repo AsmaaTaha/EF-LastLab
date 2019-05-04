@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F759BE1F-D2F8-4F62-8B93-FCAF64A01F4F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFLastLab</RootNamespace>
+    <AssemblyName>EFLastLab</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201905032300420_Initial.cs" />
+    <Compile Include="Migrations\201905032300420_Initial.Designer.cs">
+      <DependentUpon>201905032300420_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905032319553_AddRelation.cs" />
+    <Compile Include="Migrations\201905032319553_AddRelation.Designer.cs">
+      <DependentUpon>201905032319553_AddRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905032320593_AddFK.cs" />
+    <Compile Include="Migrations\201905032320593_AddFK.Designer.cs">
+      <DependentUpon>201905032320593_AddFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041126206_addUserTable.cs" />
+    <Compile Include="Migrations\201905041126206_addUserTable.Designer.cs">
+      <DependentUpon>201905041126206_addUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041138040_addUserrelation.cs" />
+    <Compile Include="Migrations\201905041138040_addUserrelation.Designer.cs">
+      <DependentUpon>201905041138040_addUserrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041222491_addUserrelation2.cs" />
+    <Compile Include="Migrations\201905041222491_addUserrelation2.Designer.cs">
+      <DependentUpon>201905041222491_addUserrelation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041323476_adddepartment.cs" />
+    <Compile Include="Migrations\201905041323476_adddepartment.Designer.cs">
+      <DependentUpon>201905041323476_adddepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041331239_adddemployee.cs" />
+    <Compile Include="Migrations\201905041331239_adddemployee.Designer.cs">
+      <DependentUpon>201905041331239_adddemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041342253_adddemployee1.cs" />
+    <Compile Include="Migrations\201905041342253_adddemployee1.Designer.cs">
+      <DependentUpon>201905041342253_adddemployee1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041415567_addbook.cs" />
+    <Compile Include="Migrations\201905041415567_addbook.Designer.cs">
+      <DependentUpon>201905041415567_addbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041417016_addbookrelation.cs" />
+    <Compile Include="Migrations\201905041417016_addbookrelation.Designer.cs">
+      <DependentUpon>201905041417016_addbookrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041422064_addbookrelation1.cs" />
+    <Compile Include="Migrations\201905041422064_addbookrelation1.Designer.cs">
+      <DependentUpon>201905041422064_addbookrelation1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041438580_addbookcityrelation.cs" />
+    <Compile Include="Migrations\201905041438580_addbookcityrelation.Designer.cs">
+      <DependentUpon>201905041438580_addbookcityrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041500591_addpresidentclass.cs" />
+    <Compile Include="Migrations\201905041500591_addpresidentclass.Designer.cs">
+      <DependentUpon>201905041500591_addpresidentclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041503366_adduniversityclass.cs" />
+    <Compile Include="Migrations\201905041503366_adduniversityclass.Designer.cs">
+      <DependentUpon>201905041503366_adduniversityclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041505159_addunivpresrelation.cs" />
+    <Compile Include="Migrations\201905041505159_addunivpresrelation.Designer.cs">
+      <DependentUpon>201905041505159_addunivpresrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041509364_addcover.cs" />
+    <Compile Include="Migrations\201905041509364_addcover.Designer.cs">
+      <DependentUpon>201905041509364_addcover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041517368_addcoverbookrelation.cs" />
+    <Compile Include="Migrations\201905041517368_addcoverbookrelation.Designer.cs">
+      <DependentUpon>201905041517368_addcoverbookrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041540255_addpersonandhome.cs" />
+    <Compile Include="Migrations\201905041540255_addpersonandhome.Designer.cs">
+      <DependentUpon>201905041540255_addpersonandhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041549012_addpersonandhomerelation.cs" />
+    <Compile Include="Migrations\201905041549012_addpersonandhomerelation.Designer.cs">
+      <DependentUpon>201905041549012_addpersonandhomerelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041553063_addpersonandhomerelation3.cs" />
+    <Compile Include="Migrations\201905041553063_addpersonandhomerelation3.Designer.cs">
+      <DependentUpon>201905041553063_addpersonandhomerelation3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041557577_addpersonandhomerelation4.cs" />
+    <Compile Include="Migrations\201905041557577_addpersonandhomerelation4.Designer.cs">
+      <DependentUpon>201905041557577_addpersonandhomerelation4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041603254_addpersonandhomerelation5.cs" />
+    <Compile Include="Migrations\201905041603254_addpersonandhomerelation5.Designer.cs">
+      <DependentUpon>201905041603254_addpersonandhomerelation5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\City.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model1.cs" />
+    <Compile Include="Model\Cover.cs" />
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Home.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\President.cs" />
+    <Compile Include="Model\University.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserVisits.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905032300420_Initial.resx">
+      <DependentUpon>201905032300420_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905032319553_AddRelation.resx">
+      <DependentUpon>201905032319553_AddRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905032320593_AddFK.resx">
+      <DependentUpon>201905032320593_AddFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041126206_addUserTable.resx">
+      <DependentUpon>201905041126206_addUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041138040_addUserrelation.resx">
+      <DependentUpon>201905041138040_addUserrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041222491_addUserrelation2.resx">
+      <DependentUpon>201905041222491_addUserrelation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041323476_adddepartment.resx">
+      <DependentUpon>201905041323476_adddepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041331239_adddemployee.resx">
+      <DependentUpon>201905041331239_adddemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041342253_adddemployee1.resx">
+      <DependentUpon>201905041342253_adddemployee1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041415567_addbook.resx">
+      <DependentUpon>201905041415567_addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041417016_addbookrelation.resx">
+      <DependentUpon>201905041417016_addbookrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041422064_addbookrelation1.resx">
+      <DependentUpon>201905041422064_addbookrelation1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041438580_addbookcityrelation.resx">
+      <DependentUpon>201905041438580_addbookcityrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041500591_addpresidentclass.resx">
+      <DependentUpon>201905041500591_addpresidentclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041503366_adduniversityclass.resx">
+      <DependentUpon>201905041503366_adduniversityclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041505159_addunivpresrelation.resx">
+      <DependentUpon>201905041505159_addunivpresrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041509364_addcover.resx">
+      <DependentUpon>201905041509364_addcover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041517368_addcoverbookrelation.resx">
+      <DependentUpon>201905041517368_addcoverbookrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041540255_addpersonandhome.resx">
+      <DependentUpon>201905041540255_addpersonandhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041549012_addpersonandhomerelation.resx">
+      <DependentUpon>201905041549012_addpersonandhomerelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041553063_addpersonandhomerelation3.resx">
+      <DependentUpon>201905041553063_addpersonandhomerelation3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041557577_addpersonandhomerelation4.resx">
+      <DependentUpon>201905041557577_addpersonandhomerelation4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041603254_addpersonandhomerelation5.resx">
+      <DependentUpon>201905041603254_addpersonandhomerelation5.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
